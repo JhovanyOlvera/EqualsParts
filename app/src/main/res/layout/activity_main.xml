@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryA900_O220"
+    tools:context="com.qacg.equalsparts.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/font_white_corner"
+        android:id="@+id/relativeLayout">
+<android.support.constraint.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/et_user"
+        app:layout_constraintRight_toRightOf="@+id/tv_user"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_user"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_user"
+        android:hint="Ingresa tu Usuario"
+        android:textAlignment="center" />
+
+    <TextView
+        android:text="Usuario"
+        android:layout_width="182dp"
+        android:layout_height="20dp"
+        android:id="@+id/tv_user"
+        android:fontFamily="sans-serif"
+        android:textAlignment="center"
+        android:textStyle="normal|bold"
+        android:textSize="18sp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintVertical_bias="0.19" />
+
+    <TextView
+        android:text="Contraseña"
+        android:layout_width="182dp"
+        android:layout_height="20dp"
+        android:id="@+id/tv_password"
+        android:fontFamily="sans-serif"
+        android:textAlignment="center"
+        android:textStyle="normal|bold"
+        android:textSize="18sp"
+        app:layout_constraintRight_toRightOf="@+id/et_user"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/et_user"
+        app:layout_constraintLeft_toLeftOf="@+id/et_user" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/et_password"
+        android:hint="Ingresa tu contraseña"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv_password"
+        app:layout_constraintLeft_toLeftOf="@+id/tv_password"
+        app:layout_constraintRight_toRightOf="@+id/tv_password"
+        android:textAlignment="center" />
+
+    <com.dx.dxloadingbutton.lib.LoadingButton
+        android:id="@+id/btn_logIn"
+        android:layout_gravity="center"
+        android:layout_width="228dp"
+        android:layout_height="48dp"
+        app:lb_resetAfterFailed="true"
+        app:lb_btnRippleColor="#000000"
+        app:lb_btnColor="@color/colorPrimaryA900_O220"
+        app:lb_btnText="Iniciar Sesion"
+        app:layout_constraintRight_toRightOf="@+id/et_password"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@+id/et_password"
+        app:layout_constraintLeft_toLeftOf="@+id/et_password" />
+
+</android.support.constraint.ConstraintLayout>
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
